@@ -33,5 +33,12 @@ Type (num) To See The Number!
       elif x > value:
           print ("Lower (-)")
           guess123()
+        
+      elif x == "num":
+          print (num)
+          time.sleep(1)
+          guess123()
+      elif x == "exit":
+          exit()
 
 guess123()
