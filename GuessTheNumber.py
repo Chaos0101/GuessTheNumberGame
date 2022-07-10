@@ -37,8 +37,8 @@ Type (exit) To Exit!
           exit()
 
       else:
-            print ("Wrong Option!")
-            time.sleep(1)
-            guess123()
+          print ("Wrong Option!")
+          time.sleep(1)
+          guess123()
 
 guess123()
