@@ -5,10 +5,13 @@ from random import randint
 seed(1)
 for _ in range(10):
     value = randint(1, 100000)
+def showthenum():
+      print ('value')
+      time.sleep(1)
+      guess123()
 def guess123():
       print ('''
 Type (exit) To Exit!
-Type (num) To See The Number!
                                                    ''')
       x = input('Enter a number from 1 until 100000: ')
       x=int(x)
@@ -30,15 +33,12 @@ Type (num) To See The Number!
           print ("Higher (+)")
           guess123()
 
-      elif x > value:
-          print ("Lower (-)")
-          guess123()
-        
-      elif x == "num":
-          print (num)
-          time.sleep(1)
-          guess123()
       elif x == "exit":
           exit()
+
+      else:
+            print ("Wrong Option!")
+            time.sleep(1)
+            guess123()
 
 guess123()
